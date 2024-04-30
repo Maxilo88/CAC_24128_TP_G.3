@@ -6,16 +6,28 @@
     /* background-color: #e9e9eb; */
 }
 
-header, nav {
+header, nav, footer {
     background-color: #333333;
     text-align: center;
+    padding: 0.5em;
 }
 
 .contenedor_nav {
-    display: flex;
+    display: flex; /* sin esta linea los atributos de flex no funcionan */
     justify-content: space-evenly;
 }
 
+.contenedor_social {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+}
+
+.item {
+    padding: 0.5em;
+}
+
 .navbar {
-    color: #e9e9eb;
+    background-color: #e9e9eb;
+    padding: 0.5em;
 }
