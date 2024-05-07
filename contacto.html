@@ -3,9 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://kit.fontawesome.com/d7af68b68b.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="img/CaC_Bikes_Favicon.ico" type="image/x-icon">
 </head>
 <body>
-    
+    <header>
+        <div class="contenedor_header">
+            
+            <img src="img/Bike_move.png" class="item" alt="Imagen en movimiento" width="200" height="200">
+            <a href="index.html"><img src="img/CaC_Bikes.png" class="item" alt="Logo de Marca" width="200" height="200"></a>
+        </div>
+        <nav class="contenedor_nav">
+            <a href="index.html" class="nav_buttons">Home</a>
+            <a href="shop.html" class="nav_buttons">E-Shop</a>
+            <a href="contacto.html" class="nav_buttons">Contacto</a>
+            <a href="acercade.html" class="nav_buttons">Sobre Nosotros</a>
+        </nav>
+    </header>
+    <main>
+        <form action="show_data.html" method="post" target="_blank"> <!-- con esta etiqueta abrimos el formulario. Action: A donde envía la información del form. con "#" envía a la misma página -->
+            <fieldset style="border: 2px dashed #2244be;"> <!-- uso de Fieldset (pag.15-Clase04) -->
+                <legend>Datos Personales</legend> 
+                
+                <label for="name">Nombre:</label> <!-- el for indica a donde están dirigidos los input. -->
+                <input type="text" size="30" name="name" id="name" maxlength="20" placeholder="Ingrese su nombre.." required><br> <!-- value != placeholder -->
+                
+                <label for="lastname">Apellido:</label>
+                <input type="text" size="30" name="lastname" id="lastname" maxlength="20" value="Lopez" required><br> <!-- value= valor por defecto -->
+                
+                <label for="adress">Dirección:</label>
+                <input type="text" size="30" name="adress" id="adress" maxlength="20" placeholder="Ingresá tu dirección.." required><br> <!-- placeholder= ayuda para rellenar el campo. -->
+                
+                <label for="city">Ciudad:</label>
+                <input type="text" size="10" name="city" id="city" max="15" value="Las Toninas"><br>
+                
+                <label for="postcode">C.P.:</label>
+                <input type="number" size="4" name="postcode" id="postcode" maxlength="4" value="null"><br>
+                
+                <label for="cel">Teléfono</label>
+                <input type="tel" name="cel" id="cel" maxlength="13" size="30" placeholder="ingresá tu numero telefónico con la caractreristica internacional"><br>
+                
+                <label for="birthdate">Fecha de nacimiento (dd/mm/yyyy):</label>
+                <input type="date" name="birthdate" id="birthdate" value="19/06/1988"><br>
+                
+                <label for="gender">Género: </label> <br>
+                <input type="radio" name="gender" id="gender" value="1">Hombre <br>
+                <input type="radio" name="gender" id="gender" value="2">Mujer <br>
+                
+                <label for="degree">Estudios Cursados: </label>
+                <input type="checkbox" name="degree" id="degree">Primario
+                <input type="checkbox" name="degree" id="degree">Secundario
+                <input type="checkbox" name="degree" id="degree">Terciario
+                <input type="checkbox" name="degree" id="degree">Universitario
+                <input type="checkbox" name="degree" id="degree">Postgrado
+            </fieldset>
+            <br>
+            <fieldset style="border: 2px dashed #2244be;">
+                <legend>Info sobre la página</legend>
+                <label for="service">Nivel de satisfacción sobre la página: </label>
+                <input type="range" name="service" id="service" min="0" max="10" value="5"> <br>
+                
+                <label for="obs">Observaciones:</label> <br>
+                <textarea name="obs" id="obs" cols="60" rows="10" aria-setsize="20" placeholder="Describinos que te pareció el sitio..."></textarea>
+            </fieldset>
+            <br>
+            <input type="submit" value="Enviar" class="inpage_buttons">
+            <input type="reset" value="Borrar" class="inpage_buttons">
+        </form>
+    </main>
+    <footer>
+        <div class="contenedor_social">
+            <a href="http://www.youtube.com.ar" target="_blank"><i class="fa-brands fa-youtube item" style="color: red;" aria-hidden="true"></i></a> <!-- Utilización de íconos mediante la página fontawesome (requiere logearse) -->
+            <a href="http://linkedin.com/in/cmlopez88" target="_blank"><i class="fa-brands fa-linkedin item" style="color: rgb(0, 119, 183);" aria-hidden="true"></i></a>
+            <a href="https://github.com/Maxilo88" target="_blank"><i class="fa-brands fa-github item" style="color: rgb(233, 233, 233);" aria-hidden="true"></i></a>
+        </div>
+        <p><b>Derechos reservados @2024 <br> Powered by [undefined]</b></p>
+    </footer>
 </body>
 </html>

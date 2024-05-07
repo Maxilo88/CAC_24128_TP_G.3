@@ -7,9 +7,14 @@
 }
 
 header, nav, footer {
-    background-color: #333333;
+    background-color: #686868;
     text-align: center;
     padding: 0.5em;
+}
+
+.contenedor_header {
+    display: flex;
+    justify-content: space-between;
 }
 
 .contenedor_nav {
@@ -27,7 +32,22 @@ header, nav, footer {
     padding: 0.5em;
 }
 
-.navbar {
+.nav_buttons {
     background-color: #e9e9eb;
     padding: 0.5em;
+    border: 2px solid #2244be;
+    color: #2244be;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-end-end-radius: 15px;
+    border-start-start-radius: 15px;
+    cursor: cell;
 }
+
+/* 
+Paletas de colores utilizadas:
+686868
+e9e9eb
+2244be 
+*/
