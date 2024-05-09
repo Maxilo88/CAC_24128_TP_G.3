@@ -6,6 +6,11 @@
     /* background-color: #e9e9eb; */
 }
 
+body, main { 
+    margin: 0; 
+    padding: 0;    
+}
+
 header, nav, footer {
     background-color: #686868;
     text-align: center;
@@ -20,6 +25,11 @@ header, nav, footer {
 .contenedor_nav {
     display: flex; /* sin esta linea los atributos de flex no funcionan */
     justify-content: space-evenly;
+}
+
+.container_main{
+    width: 100vw;
+    padding: 5px;
 }
 
 .contenedor_social {
@@ -44,6 +54,12 @@ header, nav, footer {
     border-start-start-radius: 15px;
     cursor: cell;
 }
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
 
 /* 
 Paletas de colores utilizadas:
