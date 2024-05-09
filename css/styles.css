@@ -6,44 +6,93 @@
     /* background-color: #e9e9eb; */
 }
 
-header, nav, footer {
-    background-color: #686868;
+body, main { 
+    margin: 0; 
+    padding: 0;    
+}
+
+/* --------- HEADER -------- */
+
+header {
     text-align: center;
     padding: 0.5em;
+    background-image: url(../img/header-tienda.jpg);
+    background-size: cover;
+    width: 100%;
 }
 
 .contenedor_header {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
+    width: 100%;
 }
+
+/* --------- NAVBAR -------- */
 
 .contenedor_nav {
     display: flex; /* sin esta linea los atributos de flex no funcionan */
     justify-content: space-evenly;
-}
-
-.contenedor_social {
-    display: flex;
-    justify-content: center;
-    padding: 0.5em;
-}
-
-.item {
-    padding: 0.5em;
+    width: 100%;
+    
 }
 
 .nav_buttons {
     background-color: #e9e9eb;
     padding: 0.5em;
     border: 2px solid #2244be;
-    color: #2244be;
+    color: #2244be;   
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
     border-end-end-radius: 15px;
     border-start-start-radius: 15px;
-    cursor: cell;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
+    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
 }
+
+.nav_buttons:hover {
+     box-shadow: 0px 0px 20px rgba(34, 133, 190, 0.8), 0px 0px 40px rgba(54, 204, 250, 0.5);
+     color: #0276fa;
+     border: 2px solid #0276fa;
+}
+
+
+
+
+
+
+
+/* --------- MAIN -------- */
+
+.container_main{
+    width: 100vw;
+    padding: 5px;
+}
+
+
+
+.item {
+    padding: 0.5em;
+}
+
+
+/* --------- FOOTER -------- */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em;
+    background-color: blue;
+  }
+
+  .contenedor_social {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+}  
 
 /* 
 Paletas de colores utilizadas:
