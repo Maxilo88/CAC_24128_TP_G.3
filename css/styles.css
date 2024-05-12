@@ -9,8 +9,7 @@
 }
 
 body{ 
-    width: 100vw;
-       
+    min-height: 100vh;       
 }
 
 /* --------- HEADER -------- */
@@ -29,34 +28,95 @@ header {
     width: 100%;
 }
 
-/* --------- NAVBAR -------- */
-
-.contenedor_nav {
-    display: flex; /* sin esta linea los atributos de flex no funcionan */
-    justify-content: space-evenly;
-    width: 100%;
+.item{
+    width: 300px;
+    height: 200px;
     
 }
 
-.nav_buttons {
-    background-color: #e9e9eb;
-    padding: 0.5em;
-    border: 2px solid #2244be;
-    color: #2244be;   
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-end-end-radius: 15px;
-    border-start-start-radius: 15px;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
-    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
+.codoACodo{   
+    width: 300px;
+    height: 150px;
+    margin-top: 23px;
 }
 
-.nav_buttons:hover {
+/* ---------------- NAV-BAR --------------- */
+
+nav{
+    margin-right: 5px;
+    background-color: rgba(255, 255, 255, 0.205);    
+    backdrop-filter: blur(3px);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;    
+}
+
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+
+nav li{
+    height: 50px;
+    margin: 10px;
+    background-color: rgba(255, 255, 255, 0.514);    
+    backdrop-filter: blur(3px);
+    border: 3px solid #2244be;
+    border-end-end-radius: 15px;
+    border-start-start-radius: 15px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5); /* Agrega una sombra */
+    transition: box-shadow 0.3s ease; /* Transición suave para la sombra */
+} 
+
+nav a{
+    height: 100%;
+    padding: 0 30px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #2244be;
+}
+
+nav a:hover{
+    color: #137df7;    
+    
+}
+
+nav li:hover{
     box-shadow: 0px 0px 20px rgba(34, 133, 190, 0.8), 0px 0px 40px rgba(54, 204, 250, 0.5);
-    color: #0276fa;
-    border: 2px solid #0276fa;
+    border: 3px solid #0276fa;  
+    border-end-end-radius: 15px;
+    border-start-start-radius: 15px; 
+}
+
+.menu-bar{
+    display: none;
+}
+
+/* --------------------------- SIDEBAR ------------------------------------------*/
+
+.sidebar{ 
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 200px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.11);
+    backdrop-filter: blur(10px);
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar li{
+    margin: 10px;
+
 }
 
 /* --------- MAIN -------- */
@@ -83,6 +143,32 @@ footer {
     justify-content: center;
     padding: 0.5em;
 }  
+
+
+
+
+/*---------------------------- MEDIA QUERYS --------------------------*/
+
+@media (max-width: 800px){
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-bar{
+        display: block;
+    }
+
+    .codoACodo{
+        display: none;
+    }
+
+    .item{
+        display: none;
+    }
+}
+    
+
+
+
 
 /* 
 Paletas de colores utilizadas:
