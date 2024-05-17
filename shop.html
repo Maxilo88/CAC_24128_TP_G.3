@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,16 +9,21 @@
     <script src="https://kit.fontawesome.com/d7af68b68b.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img/CaC_Bikes_Favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <header>
-        <div class="contenedor_header">            
+        <div class="contenedor_header">
             <img src="./img/logo-CAC.png" class="codoACodo" alt="Loco codo a codo">
             <a href="index.html"><img src="img/cac-bike-logo.png" class="item" alt="Logo de Marca"></a>
         </div>
 
         <nav>
             <ul class="sidebar">
-                <li onclick=hideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#2244be"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+                <li onclick=hideBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                            viewBox="0 -960 960 960" width="26px" fill="#2244be">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+                        </svg></a></li>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="shop.html">Tienda</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
@@ -29,14 +35,209 @@
                 <li class="hideOnMobile"><a href="shop.html">Tienda</a></li>
                 <li class="hideOnMobile"><a href="contacto.html">Contacto</a></li>
                 <li class="hideOnMobile"><a href="acercade.html">Nosotros</a></li>
-                <li class="menu-bar" onclick=showBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#2244be"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+                <li class="menu-bar" onclick=showBar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px"
+                            viewBox="0 -960 960 960" width="26px" fill="#2244be">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+                        </svg></a></li>
             </ul>
-        </nav>      
+        </nav>
     </header>
+    <!-- ?-----------------------------MAIN--------------------------------------- -->
     <main>
-        <div class="main_container"><h1>Prueba de texto</h1</div>
-        >
+
+        <div class="product-destacados">
+            <h2 class="product">Encontrá</h2>
+            <h2 class="destacados">Tu bici ideal</h2>
+        </div>
+
+        <section id="bicis" class="card-container">
+            <article class="card">
+                <div class="card-header">
+                    <figure class="dragon-ball">
+                        <img src="/assets/img-bicis/bici1-s-works-epic-world-cup.webp" alt="bicicleta">
+                    </figure>
+                </div>
+
+                <div class="card-main">
+                    <h2>S-Works Epic World Cup</h2>
+
+                    <div class="card-prices">
+                        <div class="card-price">$12.000.000</div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button class="button">
+                        <span class="button-content">Comprar</span>
+                    </button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-header">
+                    <figure class="campeon">
+                        <img src="/assets/img-bicis/bici2-epic-pro.webp" alt="bicicleta">
+                    </figure>
+
+                </div>
+                </div>
+
+                <div class="card-main">
+                    <h2>Epic Pro</h2>
+
+                    <div class="card-prices">
+                        <div class="card-price">$7.875.000</div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button class="button">
+                        <span class="button-content">Comprar</span>
+                    </button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-header">
+                    <figure class="messi">
+                        <img src="/assets/img-bicis/bici3-epic-hardtail.webp" alt="bicicleta">
+                    </figure>
+
+                </div>
+
+                <div class="card-main">
+                    <h2>Epic Hardtail</h2>
+                    <div class="card-prices">
+                        <div class="card-price">$2.900.000</div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button class="button">
+                        <span class="button-content">Comprar</span>
+                    </button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-header">
+                    <figure class="autos">
+                        <img src="/assets/img-bicis/bici4-rockhopper-expert-29.webp" alt="bicicleta">
+                    </figure>
+
+                </div>
+
+
+                <div class="card-main">
+                    <h2>Rockhopper Expert 29</h2>
+                    <div class="card-prices">
+                        <div class="card-price">$1.357.000</div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button class="button">
+                        <span class="button-content">Comprar</span>
+                    </button>
+                </div>
+            </article>
+        </section>
+
+        <!-- ---------------------------------CASCOS-------------------------------------------------- -->
+        <div class="product-destacados">
+            <h2 class="product">Encontrá</h2>
+            <h2 class="destacados">El casco a tu medida</h2>
+        </div>
+
+        <section id="cascos" class="card-container">
+            <article class="card">
+                <div class="card-header">
+                    <figure class="dragon-ball">
+                        <img src="/assets/img-cascos/s-work-prevail-3.webp" alt="casco para bicicleta">
+                    </figure>
+                </div>
+
+                <div class="card-main">
+                    <h2>S-Works prevail 3</h2>
+
+                    <div class="card-prices">
+                        <div class="card-price">$320.000</div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button class="button">
+                        <span class="button-content">Comprar</span>
+                    </button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-header">
+                    <figure class="autos">
+                        <img src="/assets/img-cascos/tactic.webp" alt="casco para bicicleta">
+                    </figure>
+
+                </div>
+
+                <div class="card-main">
+                    <h2>Tactic</h2>
+                    <div class="card-prices">
+                        <div class="card-price">$735.000</div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button class="button">
+                        <span class="button-content">Comprar</span>
+                    </button>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <figure class="messi">
+                        <img src="/assets/img-cascos/echelon-ll.webp" alt="casco para bicicleta">
+                    </figure>
+
+                </div>
+
+                <div class="card-main">
+                    <h2>Echelon</h2>
+                    <div class="card-prices">
+                        <div class="card-price">$290.000</div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button class="button">
+                        <span class="button-content">Comprar</span>
+                    </button>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card-header">
+                    <figure class="campeon">
+                        <img src="/assets/img-cascos/camber.webp" alt="casco para bicicleta">
+                    </figure>
+
+                </div>
+                </div>
+
+                <div class="card-main">
+                    <h2>Camber</h2>
+
+                    <div class="card-prices">
+                        <div class="card-price">$787.000</div>
+                    </div>
+                </div>
+
+                <div class="card-footer">
+                    <button class="button">
+                        <span class="button-content">Comprar</span>
+                    </button>
+                </div>
+            </article>
+        </section>
+        <!-- ---------------------------------CASCOS-------------------------------------------------- -->
     </main>
+    <!-- ?-----------------------------MAIN--------------------------------------- -->
     <footer>
         <div class="group-box-1">
             <div class="contenedor-logo">
@@ -47,19 +248,21 @@
             <div class="contenedor_social">
                 <h2>SIGUENOS</h2>
                 <div class="redes">
-                    <a href="http://www.youtube.com.ar" target="_blank"><i class="fa-brands fa-youtube"></i></a> <!-- Utilización de íconos mediante la página fontawesome (requiere logearse) -->
+                    <a href="http://www.youtube.com.ar" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    <!-- Utilización de íconos mediante la página fontawesome (requiere logearse) -->
                     <a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                    <a href="#" target="_blank"><i class="fa-brands fa-twitter" ></i></a>
+                    <a href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a>
                     <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
-                </div>                
+                </div>
             </div>
         </div>
         <div class="group-box-2">
             <div class="container-copyright">
                 <small>&copy; 2024 <b>CaC - Grupo 3 </b> Todos los Derechos Reservados. </small>
             </div>
-        </div>    
+        </div>
     </footer>
     <script src="./js/burger-nav.js"></script>
 </body>
+
 </html>
