@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/formStyles.css">
     <script src="https://kit.fontawesome.com/d7af68b68b.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="img/CaC_Bikes_Favicon.ico" type="image/x-icon">
 </head>
@@ -34,24 +35,25 @@
         </nav>      
     </header>
     <main>
-        <form action="show_data.html" method="post" target="_blank"> <!-- con esta etiqueta abrimos el formulario. Action: A donde envía la información del form. con "#" envía a la misma página -->
-            <fieldset style="border: 2px dashed #2244be;">
+        <h2>Contactate con Nosotros</h2>
+        <form action="show_data.html" method="post" target="_blank" class="formulario"> <!-- con esta etiqueta abrimos el formulario. Action: A donde envía la información del form. con "#" envía a la misma página -->
+            <fieldset class="conjunto_campos" style="border: 2px solid #2244be;">
                 <legend>Datos Personales</legend> 
                 
                 <label for="name">Nombre:</label> <!-- el for indica a donde están dirigidos los input. -->
-                <input type="text" size="30" name="name" id="name" maxlength="20" placeholder="Ingrese su nombre.." required><br> <!-- value != placeholder -->
+                <input class="campos" type="text" size="30" name="name" id="name" maxlength="20" placeholder="Ingrese su nombre.." required><br> <!-- value != placeholder -->
                 
                 <label for="lastname">Apellido:</label>
-                <input type="text" size="30" name="lastname" id="lastname" maxlength="20" value="Lopez" required><br> <!-- value= valor por defecto -->
+                <input type="text" size="30" name="lastname" id="lastname" maxlength="20" placeholder="Ingresá tu apellido.." required><br> <!-- value= valor por defecto -->
                 
                 <label for="adress">Dirección:</label>
                 <input type="text" size="30" name="adress" id="adress" maxlength="20" placeholder="Ingresá tu dirección.." required><br> <!-- placeholder= ayuda para rellenar el campo. -->
                 
                 <label for="city">Ciudad:</label>
-                <input type="text" size="10" name="city" id="city" max="15" value="Las Toninas"><br>
+                <input type="text" size="30" name="city" id="city" placeholder="Ingresá con la localidad"><br>
                 
                 <label for="postcode">C.P.:</label>
-                <input type="number" size="4" name="postcode" id="postcode" maxlength="4" value="null"><br>
+                <input type="number" name="postcode" id="postcode" maxlength="4" placeholder="Ingresá el CP"><br>
                 
                 <label for="cel">Teléfono</label>
                 <input type="tel" name="cel" id="cel" maxlength="13" size="30" placeholder="ingresá tu numero telefónico con la caractreristica internacional"><br>
@@ -59,9 +61,10 @@
                 <label for="birthdate">Fecha de nacimiento (dd/mm/yyyy):</label>
                 <input type="date" name="birthdate" id="birthdate" value="19/06/1988"><br>
                 
-                <label for="gender">Género: </label> <br>
-                <input type="radio" name="gender" id="gender" value="1">Hombre <br>
-                <input type="radio" name="gender" id="gender" value="2">Mujer <br>
+                <label for="gender">Género: </label>
+                <input type="radio" name="gender" id="gender" value="1">Hombre
+                <input type="radio" name="gender" id="gender" value="2">Mujer 
+                <br>
                 
                 <label for="degree">Estudios Cursados: </label>
                 <input type="checkbox" name="degree" id="degree">Primario
