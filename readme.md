@@ -20,7 +20,7 @@
 
 - El sitio web debe poseer al menos 4 páginas HTML o 4 secciones si se trata de un sitio One Page. Estado: OK    
 - El sitio web debe incluir un formulario de contacto, con al menos 5 campos que incluya (un checkbox o radiobutton), un select y una imagen, con validación realizada mediante JavaScript para que los campos sean obligatorios. Estado: Falta la validación de JS.
-- Tener al menos una página totalmente responsive con mínimo 3 puntos de corte con media querys para 3 tamaños de dispositivos (PC escritorio, Tablet, Celular). Para el diseño debe usarse CSS. Estado: 0%
+- Tener al menos una página totalmente responsive con mínimo 3 puntos de corte con media querys para 3 tamaños de dispositivos (PC escritorio, Tablet, Celular). Para el diseño debe usarse CSS. Estado: Ok
 - Utilizar al menos una animación, transformación o una transición. Estado: 0%
 - Poseer una estructura HTML maquetada con Flexbox y/o Grid. Estado: 0%
 - Se considerará la presentación general del proyecto, la legibilidad del mismo, la navegación sin llegar a puntos de no retorno, la optimización de imagenes para la web y el uso de favicon. Estado: favicon OK; 

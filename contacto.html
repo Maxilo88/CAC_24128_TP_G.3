@@ -36,46 +36,53 @@
     </header>
     <main>
         <h2>Contactate con Nosotros</h2>
-        <!-- Datos Personales -->
-        <form action="show_data.html" method="post" target="_blank" class="formulario">
-            <fieldset class="conjunto_campos" style="border: 2px solid #2244be;">
+        <!-- Primera parte de formulario: Datos Personales -->
+        <form action="#" method="#" target="_blank" class="formulario" id="formulario"> <!-- No se realiza el envío del formulario. -->
+            <fieldset class="conjunto_campos">
                 <legend>Datos Personales</legend> 
                 
-                <label for="name">Nombre:</label>
-                <input class="campos" type="text" size="30" name="name" id="name" maxlength="20" placeholder="Ingrese su nombre.." required><br> 
+                <label class="etiqueta" for="name">Nombre:</label>
+                <input class="campos" type="text" name="name" id="name" maxlength="20" placeholder="Ingrese su nombre.."><br> 
                 
                 <label for="lastname">Apellido:</label>
-                <input type="text" size="30" name="lastname" id="lastname" maxlength="20" placeholder="Ingresá tu apellido.." required><br>
+                <input class="campos" type="text" name="lastname" id="lastname" maxlength="20" placeholder="Ingresá tu apellido.."><br>
                 
-                <label for="cel">Teléfono</label>
-                <input type="tel" name="cel" id="cel" maxlength="13" size="30" placeholder="ingresá tu numero telefónico con la caractreristica internacional"><br>
+                <label for="cel">Teléfono:</label>
+                <input class="campos" type="tel" name="cel" id="cel" maxlength="13" placeholder="ingresá tu numero telefónico con la caractreristica internacional"><br>
                 
-                <label for="mail">Mail</label>
-                <input type="tel" name="mail" id="mail" maxlength="13" size="30" placeholder="ingresá tu numero telefónico con la caractreristica internacional"><br>
+                <label for="mail">Mail:</label>
+                <input class="campos" type="tel" name="mail" id="mail" maxlength="40" placeholder="ingresá tu mail"><br>
                 
                 <label for="birthdate">Fecha de nacimiento (dd/mm/yyyy):</label>
-                <input type="date" name="birthdate" id="birthdate" value="19/06/1988"><br>
+                <input class="campos" type="date" name="birthdate" id="birthdate"><br>
                 
                 <label for="gender">Género: </label>
-                <input type="radio" name="gender" id="gender" value="1">Hombre
-                <input type="radio" name="gender" id="gender" value="2">Mujer 
+                <input class="campos" type="radio" name="gender" id="gender">Hombre
+                <input type="radio" name="gender" id="gender">Mujer 
                 <br>
                 
                 <label for="bikeType">Que tipo de bicicleta utilizas?: </label>
-                <input type="checkbox" name="bikeType" id="bikeType">Montaña
-                <input type="checkbox" name="bikeType" id="bikeType">Ruta
-                <input type="checkbox" name="bikeType" id="bikeType">Gravel
-                <input type="checkbox" name="bikeType" id="bikeType">Urbana
-                <input type="checkbox" name="bikeType" id="bikeType">E-Bike
+                <input class="campos" type="checkbox" name="bikeType" id="bikeType">Montaña
+                <input class="campos" type="checkbox" name="bikeType" id="bikeType">Ruta
+                <input class="campos" type="checkbox" name="bikeType" id="bikeType">Gravel
+                <input class="campos" type="checkbox" name="bikeType" id="bikeType">Urbana
+                <input class="campos" type="checkbox" name="bikeType" id="bikeType">E-Bike
             </fieldset>
             <br>
-            <fieldset style="border: 2px dashed #2244be;">
-                <legend>Info sobre la página</legend>
-                <label for="service">Nivel de satisfacción sobre la página: </label>
-                <input type="range" name="service" id="service" min="0" max="10" value="5"> <br>
+            <!-- Segunda parte del formulario: Consultas. -->
+            <fieldset class="conjunto_campos">
+                <legend>Dejanos tu consulta</legend>
                 
+                <label for="consulta">Seleccione tipo de consulta: </label> <br>
+                <select class="campos" name="consulta" id="consulta">
+                    <option>Consultas</option>
+                    <option>Turnos Taller</option>
+                    <option>Inscripción a competencias</option>
+                    <option>Reclamos</option>
+                </select>
+                <br>
                 <label for="obs">Observaciones:</label> <br>
-                <textarea name="obs" id="obs" cols="60" rows="10" aria-setsize="20" placeholder="Describinos que te pareció el sitio..."></textarea>
+                <textarea name="obs" id="obs" cols="40" rows="5" aria-setsize="20" placeholder="Describinos tu consulta.."></textarea>
             </fieldset>
             <br>
             <input type="submit" value="Enviar" class="inpage_buttons">
@@ -106,5 +113,6 @@
         </div>    
     </footer>
     <script src="./js/burger-nav.js"></script>
+    <script src="./js/contact.js"></script>
 </body>
 </html>

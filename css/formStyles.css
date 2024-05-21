@@ -1,3 +1,20 @@
+:root {
+    --size: 40
+}
+
 .formulario {
-    padding: 0.8em;
+    margin: 2px;
+    padding: 1em;
+}
+
+.conjunto_campos {
+    border: 1px solid #2244be;
+    text-align: center;
+}
+
+.formulario .conjunto_campos .campos {
+    size: var(--size);
+    /* text-align: start; */
+    border: 1px solid
+
 }
