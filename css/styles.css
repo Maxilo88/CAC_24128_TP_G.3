@@ -33,15 +33,17 @@ header {
     width: 100%;
 }
 
-.item {
-    width: 300px;
+.item{
+    width: 200px;
     height: 200px;
+    margin-right: 23px;
 }
 
-.codoACodo {
-    width: 300px;
-    height: 150px;
+.codoACodo{   
+    width: 150px;
+    height: 75px;
     margin-top: 23px;
+    margin-left: 23px;
 }
 
 /* ---------------- NAV-BAR --------------- */
@@ -281,7 +283,7 @@ main {
 }
 
 .button::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -350,8 +352,8 @@ footer {
 .group-box-1 {
     width: 100%;
     margin: auto;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    display: grid;
     grid-gap: 50px;
     padding: 20px 0px;
 }
@@ -375,7 +377,14 @@ figure .logo {
     font-size: 20px;
 }
 
-.contenedor_social .redes a {
+.contenedor_social p{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.contenedor_social .redes a{
     display: inline-block;
     text-decoration: none;
     width: 50px;
@@ -424,8 +433,8 @@ a .fa-facebook:hover {
     text-align: center;
 }
 
-.group-box-2 small {
-    font-size: 16px;
+.group-box-2 small{
+    font-size: 0.75rem;
 }
 
 /*---------------------------- MEDIA QUERYS --------------------------*/
