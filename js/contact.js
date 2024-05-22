@@ -1,3 +1,4 @@
+/* Función de evento de envío de formulario */
 document.getElementById("formulario").addEventListener('submit', function(event) {
     event.preventDefault();
 

@@ -33,15 +33,17 @@ header {
 }
 
 .item{
-    width: 300px;
+    width: 200px;
     height: 200px;
+    margin-right: 23px;
     
 }
 
 .codoACodo{   
-    width: 300px;
-    height: 150px;
+    width: 150px;
+    height: 75px;
     margin-top: 23px;
+    margin-left: 23px;
 }
 
 /* ---------------- NAV-BAR --------------- */
@@ -247,15 +249,15 @@ main{
     height: 2.5rem;
     background-size: 400%;
     border: none;
-  }
-  .button:hover::before {
+}
+.button:hover::before {
     transform: scaleX(1.1);
-  }
-  .button-content {
+}
+.button-content {
     position: relative;
     z-index: 1;
-  }
-  .button::before {
+}
+.button::before {
     content: '';
     position: absolute;
     top: 0;
@@ -267,7 +269,7 @@ main{
     border-radius: inherit;
     background:var(--color-gris-claro);
     transition: all 0.475s;
-  }
+}
 
 /* ==================================== FINAL CARD´S======================================= */
 
@@ -281,8 +283,8 @@ footer {
 .group-box-1{
     width: 100%;
     margin: auto;
-    display: grid;
     grid-template-columns: repeat(2, 1fr);
+    display: grid;
     grid-gap: 50px;
     padding: 20px 0px;
 }
@@ -305,6 +307,13 @@ figure img{
     margin-bottom: 25px;
     font-size: 20px;    
 }  
+
+.contenedor_social p{
+    color: white;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
 
 .contenedor_social .redes a{
     display: inline-block;
@@ -352,7 +361,7 @@ a .fa-facebook:hover{
 }
 
 .group-box-2 small{
-    font-size: 16px;
+    font-size: 0.75rem;
 }
 
 
