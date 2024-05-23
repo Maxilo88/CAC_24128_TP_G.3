@@ -40,7 +40,7 @@
     margin: 10px auto 10px;
     padding-left: 8px;
     border-bottom: 4px solid var(--color-gris-oscuro);
-  }
+}
 .campos:focus{
     outline: none;
 }
@@ -48,7 +48,8 @@
     margin-top: 1rem;
 }
 .gender, .bike{
-    font-size: 1rem;
+    font-size: 1.2rem;
+    padding-right: 5px;
 }
 .select, .textarea{
     width: 100%;
@@ -57,7 +58,7 @@
 .select, .textarea:focus {
     outline: none;
 }
-  .button {
+.button {
     max-width: 8rem;
     background: var(--color-gris-oscuro);
     color: white;
@@ -107,4 +108,11 @@
     flex-direction: row;
     justify-content: center;
     gap: 2rem;
+}
+
+
+/* -------------- Clases de Label ------------- */
+
+.genderItem, .BikeItem {
+    margin-left: 10px;
 }

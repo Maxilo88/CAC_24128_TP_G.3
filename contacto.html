@@ -58,19 +58,21 @@
                 
                 <div class="gender">
                     <label for="gender">Género: </label>
-                    <input type="radio" name="gender" id="gender">Hombre
-                    <input type="radio" name="gender" id="gender">Mujer 
+                    <input class="genderItem" type="radio" name="gender">Hombre
+                    <input class="genderItem" type="radio" name="gender">Mujer 
                 </div>
                 <br>
                 
                 <label class="bike" for="bikeType">Que tipo de bicicleta utilizas?: </label>
-                <input class="bike" type="checkbox" name="bikeType" id="bikeType"><label class="bike" for="">Montaña</label>
-                <input class="bike" type="checkbox" name="bikeType" id="bikeType"><label for="" class="bike">Ruta</label>
-                <input class="bike" type="checkbox" name="bikeType" id="bikeType"><label for="" class="bike">Gravel</label>
-                <input class="bike" type="checkbox" name="bikeType" id="bikeType"><label for="" class="bike">Urbana</label>
-                <input class="bike" type="checkbox" name="bikeType" id="bikeType"><label for="" class="bike">E-Bike</label>
+                <br>
+                <input class="BikeItem" type="checkbox" name="bikeType">Montaña
+                <input class="BikeItem" type="checkbox" name="bikeType">Ruta
+                <input class="BikeItem" type="checkbox" name="bikeType">Gravel
+                <input class="BikeItem" type="checkbox" name="bikeType">Urbana
+                <input class="BikeItem" type="checkbox" name="bikeType">E-Bike
             </fieldset>
             <br>
+            <!-- <label class="bike" for="">Montaña</label> -->
             <!-- Segunda parte del formulario: Consultas. -->
             <fieldset class="conjunto_campos">
                 <legend class="title-form">Dejanos tu consulta</legend>
@@ -83,7 +85,7 @@
                     <option>Reclamos</option>
                 </select>
                 <label for="obs">Observaciones:</label> <br>
-                <textarea class="textarea" name="obs" id="obs" cols="40" rows="5" aria-setsize="20" placeholder=" Describinos tu consulta.."></textarea>
+                <textarea class="textarea" name="obs" cols="40" rows="5" aria-setsize="20" placeholder=" Describinos tu consulta.."></textarea>
             </fieldset>
             <div class="container-button">
                 <button class="button"><span class="button-content">Enviar</span></button>
