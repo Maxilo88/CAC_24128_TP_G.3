@@ -11,36 +11,36 @@ document.getElementById("formulario").addEventListener('submit', function(event)
 
     /* verificamos si los campos están completos */
     if (!name.value) {
-        alert('El campo Nombre es obligatorio');
+        alert('Debe completar el campo Nombre');
         name.focus();
         return false;
     }
     
     if (!lastname.value) {
-        alert('El campo Apellido es obligatorio');
+        alert('Debe completar el campo Apellido');
         lastname.focus();
         return false;
     }
 
     if (!telefono.value) {
-        alert('El campo Teléfono es obligatorio');
+        alert('Debe completar el campo Teléfono');
         telefono.focus();
         return false;
     }
 
     if (!email.value) {
-        alert('El campo Email es obligatorio');
+        alert('Debe completar el campo Email');
         email.focus();
         return false;
     }
 
     if (!consulta.value) {
-        alert('El campo consulta es obligatorio');
+        alert('Debe completar el campo consulta');
         consulta.focus();
         return false;
     }
 
     /* Envío de formulario si está todo completo */
-    alert('Formulario enviado con éxito');
+    alert('Formulario enviado exitosamente');
     this.submit();
 });
